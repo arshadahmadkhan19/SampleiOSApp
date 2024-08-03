@@ -12,7 +12,24 @@ struct PhotoCell: View {
     
     var body: some View {
         HStack {
-    
+//            AsyncImage(url: URL(string: photo.thumbnailUrl ?? "")) { phase in
+//                switch phase {
+//                    case .empty:
+//                        ProgressView().frame(width: 30, height: 30)
+//                    case .success(let image):
+//                        image.resizable()
+//                            .scaledToFit()
+//                            .frame(width: 30, height: 30)
+//                    case .failure(let error):
+//                        Image(systemName: "photo").resizable()
+//                            .scaledToFit()
+//                            .frame(width: 30, height: 30)
+//                    @unknown default:
+//                        EmptyView()
+//                }
+//                
+//            }
+//            
             CustomAsyncImage(url: URL(string: photo.thumbnailUrl ?? ""))
                            .frame(width: 30, height: 30)
                            .cornerRadius(5)
