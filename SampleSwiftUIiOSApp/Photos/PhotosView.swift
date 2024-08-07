@@ -13,13 +13,18 @@ struct PhotosView: View {
     init(service: PhotosServiceProtocol = PhotosService(networkHandler: NetworkHandler())) {
         _viewModel = StateObject(wrappedValue: PhotosViewModel(photosService: service))
     }
+    
     var body: some View {
-        List {
-            ForEach(viewModel.photosList, id: \.id) { photo in
-                PhotoCell(photo: photo)
-            }
-        }.onAppear() {
-            viewModel.getPhotos()
+        NavigationStack {
+            List {
+                ForEach(viewModel.photosList, id: \.id) { photo in
+                    NavigationLink(destination: PhotoDetailsView(photoModel: photo)) {
+                        PhotoCell(photo: photo)
+                    }
+                }
+            }.onAppear() {
+                viewModel.getPhotos()
+            }.listRowSeparator(.visible)
         }
     }
 }

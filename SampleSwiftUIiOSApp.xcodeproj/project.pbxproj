@@ -26,6 +26,7 @@
 		F460D1492C5D490200F1C690 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F460D1482C5D490200F1C690 /* PhotoCell.swift */; };
 		F466A50C2C5E8A8200115791 /* CustomAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F466A50B2C5E8A8200115791 /* CustomAsyncImage.swift */; };
 		F466A5102C5E924900115791 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F466A50F2C5E924900115791 /* ImageCache.swift */; };
+		F466A5132C5ED6A800115791 /* PhotoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F466A5122C5ED6A800115791 /* PhotoDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		F460D1482C5D490200F1C690 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		F466A50B2C5E8A8200115791 /* CustomAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncImage.swift; sourceTree = "<group>"; };
 		F466A50F2C5E924900115791 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		F466A5122C5ED6A800115791 /* PhotoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 		F460D13D2C5C26C800F1C690 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
+				F466A5112C5ED68800115791 /* PhotoDetails */,
 				F460D13E2C5C26DD00F1C690 /* PhotosView.swift */,
 				F460D1402C5C26F300F1C690 /* PhotosViewModel.swift */,
 				F460D1422C5C270500F1C690 /* PhotosService.swift */,
@@ -185,6 +188,14 @@
 				F466A50F2C5E924900115791 /* ImageCache.swift */,
 			);
 			path = Photos;
+			sourceTree = "<group>";
+		};
+		F466A5112C5ED68800115791 /* PhotoDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F466A5122C5ED6A800115791 /* PhotoDetailsView.swift */,
+			);
+			path = PhotoDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +338,7 @@
 				F460D13F2C5C26DD00F1C690 /* PhotosView.swift in Sources */,
 				F466A50C2C5E8A8200115791 /* CustomAsyncImage.swift in Sources */,
 				F460D10A2C59772600F1C690 /* PostsView.swift in Sources */,
+				F466A5132C5ED6A800115791 /* PhotoDetailsView.swift in Sources */,
 				F460D1332C597DEB00F1C690 /* PostModel.swift in Sources */,
 				F460D1452C5C271900F1C690 /* PhotoModel.swift in Sources */,
 				F460D1082C59772600F1C690 /* SampleSwiftUIiOSAppApp.swift in Sources */,
